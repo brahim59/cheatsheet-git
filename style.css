@@ -1,5 +1,36 @@
-img{
+img{        /* image logo git */
 	width: 250px;
 	height: 150px;
-	background-color: black;
+	background-color: #FFD00C;
+}
+h1 {             /* title */
+	text-align: center;               
+	background-color:#FFD00C;
+	color:#FC5050;
+}
+
+html {
+  font: 16px "Verdana, sans-serif", Arial; /* texte de 16 pixels */
+}
+
+u {
+	font-weight : bold;   
+	background-color:#FFD00C;
+	margin-left: 40px;
+}
+.text{
+	padding:40px;
+}
+.git{                                /* different git */
+	background-color:#EF4339;
+}
+.def{                               /* fonction git */
+	background-color:#D1E9EA;
+}
+body{                               /* contenu texte */
+	background-color:#415F77
+;
+}
+p{
+	text-align: center;
 }
