@@ -2,79 +2,51 @@
 <html>
   <head>
     <title>Git Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
     </head>
-    <h1><center>GIT CHEAT SHEET</center></h1>
+    <h1><center><FONT size="14pt "> GIT CHEAT SHEET</FONT></center></h1>
 
     <div style="text-align: center">
-   <img src="http://fr.wikibooks.org/images/wiki-textbook.png" width="129" />
+   <img src="Gitlogo.png"/>  
 </div>
-    <details>
-     <summary><u>git init</u></summary>
+    <div>
     
-    <p>Initialise un dépôt git dans un répertoire vide</p>
-    </details>
-    <details>
-        <summary><u>git status</u></summary>
-
-        <p>Affiche le statut des choses dans le répertoire suivi</p>
-    </details>
-    <DETAILS>
-        <summary><u>git add</u></summary>
-        <p>Ajoute un fichier à suivre dans la zone d’attente</p>
-    </DETAILS>
-
-    <details>
-        <summary>git commit -m "entrez votre message"
-        </summary>
-        <p>Consigner (déclarer) toute modification</p>
-    </details>
-    <details>
-        <summary><u>git remote add origin [adresse URL GitHub ici] :  </u>
-        </summary>
-        <p>Connecte votre dépôt local avec GitHub.</p>
-    </details>
-
-    <details>
-        <summary><u>git push -u origin nom_branche </u></summary>
-        <p>Pousse les modifications vers GitHub</p>
-    </details>
-
-    <details>
-        <summary><u>git checkout : Littéralement “check out”</u></summary>
-        <p>(retirer, rapatrier) une branche.</p>
-    </details>
-    <details>
-        <summary><u>git -b <NomBranche></u></summary>
-        <p>Crée une nouvelle branche dans votre dépôt</p>
-    </details>
-    <details>
-        <summary><u>git log</u></summary>
-        <p>affiche un journal des modifications au dépôt</p>
-    </details>
-    <details>
-        <summary><u><tr>git clone<URL PROVENAT DE GITHUB</tr></u></summary>
-        <p>clone un projet de votre systeme à partir de github</p>
-    </details>
-    <details>
-        <summary><u>git branch<nom_branche></u></summary>
-        <p>crée une copie de la branche master appelée</p>
-    </details>
-    <details>
-        <summary><u>git checkout<branch_name></u></summary>
-        <p>bascule vers nom_branche comme branche de travail</p>
-    </details>
-    <details>
-        <summary><u>git checkout master </u>
-        </summary>
-        <p>bascule la branche vers master </p>
-    </details>
-    <details>
-        <summary><u>git branch -a</u></summary> 
-        <p>affiche les branchess existantes pour le dépôt particulier</p>
-    </details>
-
-
-</html>
-
-
+     <u>CONFIGURATION DES OUTILS</u>
+     <p>Configurer les informations de l'utilisateur pour tous les dépôts locaux</p>
+     <dl>
+        <dt class="git">git config --global user.name "[name]"</dt>
+        <dd class="def">Définit le nom que vous voulez associer à touutes opérations de commit </dd>
+        <dt class="git">git config --global user.email "[email]"</dt>
+        <dd class="def">Definit l'email que vous voulez associez à toutes vos opérations de commit</dd>
+        <dt class="git">git config --global color.ui auto</dt>
+        <dd class="def">Active la colorisation de la sortie en ligne de commande</dd>
+      </dl>
     
+    
+    <u>CRÉER DES DÉPÔTS</u>
+    <p>Démarrer un nouveau dépôt ou en obtenir un depuis une URL existante</p>
+
+    <dl>
+        <dt class="git"> git init [nom-du-projet]</dt>
+        <dd class="def">Crée un dépôt local à partir du nom spécifié </dd>
+        <dt class="git">git clone [url]</dt>
+        <dd class="def">Télécharge un projet et tout son historique de versions</dd>
+        
+    </dl>
+
+    <u>EFFECTUER DES CHANGEMENTS</u>
+    <p>Consulter les modifications et effectuer une opération de commit</p>
+
+    <dl>
+        <dt class="git">git status </dt>
+        <dd class="def">Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</dd>
+        <dt class="git">git diff</dt>
+        <dd class="def">Montre les modifications de fichier qui ne sont pas encore indexées</dd>
+        <dt class="git"> git add [fichier] </dt>
+        <dd class="def">Ajoute un instantané du fichier, en préparation pour le suivi de version</dd>
+        <dt class="git">  git reset [fichier] </dt>
+        <dd class="def">Enleve le fichier de l'index, mais conserve son contenu</dd>
+        <dt class="git"> git commit -m "[message descriptif]" </dt>
+        <dd class="def">Enregistre des instantanés de fichiers de façon permanente dans l'historique des versions</dd>
+
