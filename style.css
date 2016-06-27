@@ -34,3 +34,11 @@ body{                               /* contenu texte */
 p{
 	text-align: center;
 }
+.pied {                          /* pied de page footer */
+
+color:#EF4339;
+background-color:#FFD00C;
+text-align: center;
+
+
+}
